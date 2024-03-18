@@ -1,2 +1,30 @@
+# Sistema de Banco em Java
 
-# System-Client
+Este é um projeto de sistema de banco desenvolvido em Java, com foco em encapsulamento, classes e métodos.
+
+## Funcionalidades
+
+O sistema inclui as seguintes funcionalidades:
+
+- Cadastro de Clientes: Permite registrar novos clientes no sistema.
+- Saque: Permite que os clientes realizem saques de suas contas.
+- Depósito: Permite que os clientes realizem depósitos em suas contas.
+- Transferências: Permite que os clientes transfiram fundos entre suas contas ou para outras contas.
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte maneira:
+
+- `src/`: Contém o código-fonte do projeto.
+  - `com/banco/`: Pacote principal do projeto.
+    - `Cliente.java`: Classe que representa um cliente do banco.
+    - `SystemClient.java`: Classe que representa uma conta bancária.
+ 
+
+## Uso
+
+Para utilizar o sistema, siga estes passos:
+
+1. Clone este repositório para sua máquina local.
+2. Compile o código-fonte Java.
+3. Execute o arquivo principal `Banco.java`.
