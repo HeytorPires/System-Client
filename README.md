@@ -1,4 +1,4 @@
-# Sistema de Banco em Java
+# Sistema de Banco em Java 
 
 Este é um projeto de sistema de banco desenvolvido em Java, com foco em encapsulamento, classes e métodos.
 
@@ -16,7 +16,6 @@ O sistema inclui as seguintes funcionalidades:
 O projeto está organizado da seguinte maneira:
 
 - `src/`: Contém o código-fonte do projeto.
-  - `com/banco/`: Pacote principal do projeto.
     - `Cliente.java`: Classe que representa um cliente do banco.
     - `SystemClient.java`: Classe que representa uma conta bancária.
  
@@ -27,4 +26,7 @@ Para utilizar o sistema, siga estes passos:
 
 1. Clone este repositório para sua máquina local.
 2. Compile o código-fonte Java.
-3. Execute o arquivo principal `Banco.java`.
+3. Execute o arquivo principal `SystemClient.java`.
+
+
+Projeto desenvolvido na faculdade afins pedagógicos.
