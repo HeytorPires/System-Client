@@ -66,10 +66,10 @@ public class Cliente {
     }
     public void Saque(float Valor){
         if(Valor > this.saldo && Valor > 0){
-            System.out.println("Nao posssivel realizar o saque, Saldo insuficiente!");
-        } else {
             saldo -= Valor;
             System.out.println("Saldo Atualizado para :" + this.saldo);
+        } else {
+             System.out.println("Nao posssivel realizar o saque, Saldo insuficiente!");
         }
     }
 }
