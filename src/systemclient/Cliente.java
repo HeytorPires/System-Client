@@ -14,6 +14,7 @@ public class Cliente {
     private String name;
     private String documento;
     private float saldo;
+    private int valorteste;
 
     public Cliente( String type, String name, String documento, float saldo) {
         this.type = type;
