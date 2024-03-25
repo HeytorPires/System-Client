@@ -14,17 +14,22 @@ public class Cliente {
     private String name;
     private String documento;
     private float saldo;
-    private int valorteste;
 
     public Cliente( String type, String name, String documento, float saldo) {
         this.type = type;
         this.name = name;
         this.documento = documento;
-        this.saldo = saldo;
+        this.saldo = 0;
     }
      public static Cliente criarCliente( String type, String name, String documento, float saldo) {
         return new Cliente(type, name, documento, saldo);
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "Tipo=" + type + ", Nome=" + name + ", saldo=" + saldo + '}';
+    }
+     
 
     public int getId() {
         return id;
@@ -72,5 +77,16 @@ public class Cliente {
         } else {
              System.out.println("Nao posssivel realizar o saque, Saldo insuficiente!");
         }
+    }
+    public void Deposito(float Valor){
+        if(Valor > 0){
+            saldo += Valor;
+            System.out.println("Saldo Atualizado para :" + this.saldo);
+        } else {
+             System.out.println("Nao posssivel realizar o Deposito, Valor não aceito!");
+        }
+    }
+    public void Transferencia(String Conta1, float Valor1, String Conta2, float Valor2 ){
+        
     }
 }
