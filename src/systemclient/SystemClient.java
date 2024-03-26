@@ -17,13 +17,12 @@ public class SystemClient  {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        int identificador = 0;
         ArrayList<Cliente> clientes = new ArrayList<>();
         
         Scanner Scan = new Scanner(System.in);
         Menu();
         int MenuInputUser = Scan.nextInt();
-        //Cliente cliente1 = new Cliente("Juridico", "Pires", "documento Teste", 0);
         boolean Saida = false;
          do{
         switch(MenuInputUser){
@@ -34,10 +33,11 @@ public class SystemClient  {
                 String TypeCliente = "";
                 if(TypeUserClient == 1){
                  TypeCliente = "Fisico";
+                 System.out.println("Nome do Cliente:");
                 } else if( TypeUserClient == 2){
                     TypeCliente = "Juridico";
+                    System.out.println("Nome Fantasia:");
                 }
-                System.out.println("Nome do Cliente:");
                 String NameUserClient = Scan.next();
                 System.out.println("Documento:");
                 String DocumentUserClient = Scan.next();
@@ -46,9 +46,9 @@ public class SystemClient  {
                 Menu();
                 System.out.println("\n\n\n\n");
                 MenuInputUser = Scan.nextInt();
-                Cliente cliente = new Cliente(TypeCliente, NameUserClient, DocumentUserClient, 0);
+                Cliente cliente = new Cliente(TypeCliente, NameUserClient, DocumentUserClient, 0, identificador );
                 clientes.add(cliente);
-                
+                identificador += 1;
             }
             case 2 -> {
                  System.out.println(" ----- Listagem Cliente ----");
@@ -57,30 +57,20 @@ public class SystemClient  {
                  };
                  System.out.println("\n\n\n\n");
                 Menu();
-                
-
                 MenuInputUser = Scan.nextInt();
-            
                     }
-            case 4 -> {
+            case 4 -> 
+            {
+                System.out.println("Não funciona ainda ");
                 
             } 
+            case 5  -> 
+            {
+                
+            }
         
                 }
             } while(MenuInputUser != 3);
-                    
-        
-        
-     
-        /* 
-        String TipoCLiente = cliente1.getType();
-        String NomeCliente = cliente1.getName();
-        String DocumentoCliente = cliente1.getDocumento();
-        
-        System.out.println("tipo do cliente :" + TipoCLiente);
-        System.out.println("Nome do Cliente:" + NomeCliente);
-        System.out.println("Documento do Cliente" + DocumentoCliente );
-        */
 
     }
     public static void Menu(){
@@ -88,6 +78,9 @@ public class SystemClient  {
         System.out.println("1 - Cadastrar Cliente ");
         System.out.println("2 - Listar Clientes");
         System.out.println("3 - Sair!");
+        System.out.println("4 - Consultar Saldo");
+        System.out.println("5 - Depositar");
+        System.out.println("6 - Sacar");
     }
     
 }
